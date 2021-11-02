@@ -1,0 +1,7 @@
+*.service
+*.gz
+*.tar
+
+prometheus*/*
+node_exporter*/*
+

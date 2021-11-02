@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus Node Explorer
+Documentation=https://prometheus.io/docs/guides/node-exporter
+After=network-online.target
+
+[Service]
+User=PROMUSER
+Restart=on-failure
+
+ExecStart=NODEEXPDIR/node_exporter
+
+[Install]
+WantedBy=multi-user.target
